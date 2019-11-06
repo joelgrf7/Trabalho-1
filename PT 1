@@ -1,0 +1,44 @@
+listas = [[]] #uma lista de lista
+
+while True:
+
+    print("1-Cadastrar reuniao")
+
+    print("2-Lista de reuniao")
+
+    print("3-Procurar reuniao")
+
+    print("4-criar reuniao")
+
+    op = int(input())#Escolha da opcao
+
+    if op == 1:
+
+        nova = [] # cria uma lista para adicionar a reuniao
+
+        part = input("participantes")
+
+        ata = input("atas da reuniao")
+
+        local = input("local da reuniao")
+
+        nova.append(part)
+
+        nova.append(ata)
+
+        nova.append(local)
+
+        listas.append(nova)#Adiciona a lista criada
+
+    elif op == 2:
+
+        for mostrar in listas:
+
+            for mostrar2 in mostrar:
+
+                print(mostrar2)#mostra tudo dentro da
+
+    elif op == 3:
+
+        print("procurando")
+
